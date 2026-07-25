@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sreeja K | Aspiring AI Engineer Portfolio</title>
+    <meta name="description" content="Portfolio of Sreeja K - Artificial Intelligence & Data Science Student, Machine Learning Enthusiast, and Aspiring AI Engineer.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Crisp Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Scroll Progress Bar -->
+    <div id="scrollProgress" class="scroll-progress-bar"></div>
+
+    <!-- AI Initialization Loading Screen -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="loading-content">
+            <div class="ai-loading-logo">
+                <i class="fa-solid fa-brain fa-spin"></i>
+            </div>
+            <h1 class="loading-name">SREEJA</h1>
+            <p class="loading-dept">Artificial Intelligence & Data Science</p>
+            <div class="loading-status-wrap">
+                <span class="status-dot-pulse"></span>
+                <p class="loading-status-text">Initializing Intelligence...</p>
+            </div>
+            <div class="loading-bar-container">
+                <div class="loading-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interactive Neural Network Canvas Background -->
+    <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+
+    <!-- Cursor Follow Glow Ring -->
+    <div id="cursorGlow" class="cursor-glow"></div>
+
+    <!-- Ambient Gradient Mesh & AI Circuit Overlays -->
+    <div class="gradient-blob blob-1"></div>
+    <div class="gradient-blob blob-2"></div>
+    <div class="gradient-blob blob-3"></div>
+    <div class="hex-grid-overlay"></div>
+
+    <!-- Sticky Glassmorphism Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="brand-logo">
+                <div class="logo-symbol">
+                    <i class="fa-solid fa-brain"></i>
+                </div>
+                <div class="logo-text-group">
+                    <span class="logo-name">Sreeja K</span>
+                    <span class="logo-badge">AI & DS Student</span>
+                </div>
+            </a>
+            
+            <nav class="nav-links" id="navMenu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="file:///C:/Users/sreej/.gemini/antigravity/brain/558efc25-fc43-4728-b13d-d9cf4abe8635/.user_uploaded/media__1785002351982.pdf" download="Sreeja_K_Resume.pdf" class="btn btn-outline btn-sm trigger-resume-download">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+                <a href="#contact" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-paper-plane"></i> Hire Me
+                </a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+        <div class="container hero-container">
+            
+            <!-- Hero Content Left -->
+            <div class="hero-content" data-reveal="left">
+                
+                <div class="status-pill">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Seeking Internship & Placement Opportunities</span>
+                </div>
+
+                <div class="hero-intro-group">
+                    <h2 class="hero-greeting">Hello, I am Sreeja K</h2>
+                    <h1 class="hero-title">Aspiring AI Engineer Building Intelligent Solutions</h1>
+                </div>
+
+                <!-- Role Subtitles -->
+                <div class="hero-subtitle-container">
+                    <p class="hero-subtitle">
+                        <span class="sub-item"><i class="fa-solid fa-microchip"></i> Artificial Intelligence & Data Science Student</span>
+                        <span class="sub-divider">•</span>
+                        <span class="sub-item"><i class="fa-solid fa-brain"></i> Machine Learning Enthusiast</span>
+                        <span class="sub-divider">•</span>
+                        <span class="sub-item"><i class="fa-solid fa-wand-magic-sparkles"></i> AI Enthusiast</span>
+                        <span class="sub-divider">•</span>
+                        <span class="sub-item"><i class="fa-solid fa-chart-line"></i> Data Science Enthusiast</span>
+                        <span class="sub-divider">•</span>
+                        <span class="sub-item"><i class="fa-solid fa-code"></i> Full Stack Developer</span>
+                    </p>
+                </div>
+
+                <!-- Professional Summary -->
+                <p class="hero-description">
+                    I am an Artificial Intelligence and Data Science undergraduate passionate about Machine Learning, Artificial Intelligence, Data Science and Full-Stack Development. I enjoy building intelligent applications that solve real-world problems while continuously learning emerging technologies. I am actively seeking internship and placement opportunities where I can contribute, learn and build impactful AI solutions.
+                </p>
+
+                <!-- Quote -->
+                <div class="ai-quote-card">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="quote-text">"Transforming Data into Intelligent Solutions through Artificial Intelligence."</p>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="hero-cta-group">
+                    <a href="#projects" class="btn btn-primary btn-lg cta-main">
+                        <span>View Projects</span>
+                        <i class="fa-solid fa-arrow-right icon-arrow"></i>
+                    </a>
+                    <a href="file:///C:/Users/sreej/.gemini/antigravity/brain/558efc25-fc43-4728-b13d-d9cf4abe8635/.user_uploaded/media__1785002351982.pdf" download="Sreeja_K_Resume.pdf" class="btn btn-secondary btn-lg trigger-resume-download">
+                        <i class="fa-solid fa-download"></i>
+                        <span>Download Resume</span>
+                    </a>
+                    <a href="#contact" class="btn btn-outline btn-lg cta-contact">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>Hire Me</span>
+                    </a>
+                </div>
+
+                <!-- Verified Stats Grid -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">AI & DS</span>
+                            <span class="stat-label">Undergraduate</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-star"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">8.2</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">ML</span>
+                            <span class="stat-label">Enthusiast</span>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper"><i class="fa-solid fa-laptop-code"></i></div>
+                        <div class="stat-info">
+                            <span class="stat-value">Web Dev</span>
+                            <span class="stat-label">Intern</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Hero Visual Right (Uploaded Portrait Glass Card) -->
+            <div class="hero-visual" data-reveal="right">
+                <div class="visual-portrait-container">
+                    
+                    <div class="tech-ring ring-outer"></div>
+                    <div class="tech-ring ring-inner"></div>
+                    <div class="portrait-glow"></div>
+
+                    <!-- Floating Glass Frame around Uploaded Photo -->
+                    <div class="portrait-glass-card">
+                        <div class="portrait-image-wrapper">
+                            <img src="file:///C:/Users/sreej/.gemini/antigravity/brain/558efc25-fc43-4728-b13d-d9cf4abe8635/.user_uploaded/media__178499882495.jpg" 
+                                 alt="Sreeja K - Professional Corporate Headshot" 
+                                 class="uploaded-headshot"
+                                 onerror="this.onerror=null; this.src='file:///C:/Users/sreej/.gemini/antigravity/brain/558efc25-fc43-4728-b13d-d9cf4abe8635/.user_uploaded/media__1785002343747.jpg';">
+                        </div>
+                        <div class="glass-card-reflection"></div>
+                        <div class="glass-card-footer">
+                            <div class="card-identity">
+                                <strong>Sreeja K</strong>
+                                <span>Aspiring AI Engineer</span>
+                            </div>
+                            <div class="ai-verified-badge">
+                                <i class="fa-solid fa-shield-check"></i> Verified Profile
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8 Orbiting Floating AI Capability Badges -->
+                    <div class="floating-ai-badge badge-ai floating-element">
+                        <i class="fa-solid fa-robot"></i>
+                        <span>Artificial Intelligence</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-ml floating-element" style="animation-delay: 0.8s;">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>Machine Learning</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-python floating-element" style="animation-delay: 1.6s;">
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-dl floating-element" style="animation-delay: 2.4s;">
+                        <i class="fa-solid fa-network-wired"></i>
+                        <span>Deep Learning</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-cv floating-element" style="animation-delay: 0.4s;">
+                        <i class="fa-solid fa-eye"></i>
+                        <span>Computer Vision</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-ds floating-element" style="animation-delay: 2s;">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Data Science</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-cloud floating-element" style="animation-delay: 1.2s;">
+                        <i class="fa-solid fa-cloud"></i>
+                        <span>Cloud Computing</span>
+                    </div>
+
+                    <div class="floating-ai-badge badge-fs floating-element" style="animation-delay: 2.8s;">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Full Stack Development</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-microchip"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <section class="section-padding" id="about">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-user-astronaut"></i> Discover My Background</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-split-layout">
+                
+                <!-- Left: Rounded Rectangle Profile Card -->
+                <div class="about-visual-side" data-reveal="left">
+                    <div class="about-glass-card">
+                        <div class="about-portrait-rect">
+                            <img src="file:///C:/Users/sreej/.gemini/antigravity/brain/558efc25-fc43-4728-b13d-d9cf4abe8635/.user_uploaded/media__178499882495.jpg" 
+                                 alt="Sreeja K Profile"
+                                 class="about-headshot-rect-img">
+                            <div class="rect-badge"><i class="fa-solid fa-brain"></i> AI & DS</div>
+                        </div>
+                        <div class="about-card-info">
+                            <h3>Sreeja K</h3>
+                            <p class="institution-subtitle">Dr. Mahalingam College of Engineering and Technology</p>
+                            <div class="about-quick-tags">
+                                <span><i class="fa-solid fa-location-dot"></i> Tamil Nadu, India</span>
+                                <span><i class="fa-solid fa-graduation-cap"></i> B.Tech AI & DS</span>
+                                <span><i class="fa-solid fa-bullseye"></i> AI Engineering</span>
+                            </div>
+                        </div>
+
+                        <!-- Built-in SVG AI Illustration -->
+                        <div class="about-svg-illustration">
+                            <svg viewBox="0 0 300 120" class="ai-svg">
+                                <circle cx="150" cy="60" r="45" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="4 4" class="rotating-svg-ring"/>
+                                <circle cx="150" cy="60" r="28" fill="#2563EB" opacity="0.1"/>
+                                <path d="M110 60 Q 150 20 190 60 T 270 60" fill="none" stroke="#06B6D4" stroke-width="2.5"/>
+                                <g fill="#2563EB">
+                                    <circle cx="120" cy="45" r="5"/>
+                                    <circle cx="150" cy="60" r="6"/>
+                                    <circle cx="180" cy="75" r="5"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content Narrative -->
+                <div class="about-narrative-side" data-reveal="right">
+                    <div class="narrative-card">
+                        <h3 class="narrative-heading">Passion for AI Innovation & Practical Engineering</h3>
+                        <p class="narrative-paragraph">
+                            I am an Artificial Intelligence and Data Science undergraduate at <strong>Dr. Mahalingam College of Engineering and Technology</strong> with a strong passion for <strong>Machine Learning</strong>, <strong>Artificial Intelligence</strong>, <strong>Data Science</strong>, and <strong>Full-Stack Development</strong>.
+                        </p>
+                        <p class="narrative-paragraph">
+                            I enjoy building practical applications that solve real-world problems using innovative technologies. Through academic projects, internships, and continuous learning, I have developed strong technical, analytical, and problem-solving skills. I aspire to contribute to impactful AI-driven solutions while continuously growing as an AI professional.
+                        </p>
+
+                        <!-- Animated Info Cards -->
+                        <div class="about-highlights-grid">
+                            <div class="highlight-item">
+                                <div class="hl-icon"><i class="fa-solid fa-brain"></i></div>
+                                <div class="hl-text">
+                                    <h4>AI & ML Modeling</h4>
+                                    <p>Predictive analysis, statistical modeling, and Scikit-learn algorithms.</p>
+                                </div>
+                            </div>
+
+                            <div class="highlight-item">
+                                <div class="hl-icon"><i class="fa-solid fa-code"></i></div>
+                                <div class="hl-text">
+                                    <h4>Full Stack Engineering</h4>
+                                    <p>Responsive web interfaces, API integration, and database optimization.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-graduation-cap"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section-padding alt-section" id="education">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-graduation-cap"></i> Academic Excellence</span>
+                <h2 class="section-title">Education</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-spine"></div>
+
+                <!-- B.Tech Card -->
+                <div class="timeline-card-wrapper" data-reveal="left">
+                    <div class="timeline-node-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <div class="timeline-glass-card">
+                        <div class="card-timeline-header">
+                            <div>
+                                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2023–2027</span>
+                                <h3 class="degree-name">Bachelor of Technology in Artificial Intelligence and Data Science</h3>
+                                <h4 class="college-name"><i class="fa-solid fa-building-columns"></i> Dr. Mahalingam College of Engineering and Technology, Pollachi</h4>
+                            </div>
+                            <div class="cgpa-pill">
+                                <span class="cgpa-label">CGPA</span>
+                                <span class="cgpa-value">8.2</span>
+                                <small style="font-size:0.65rem; margin-left:2px;">(till 5th sem)</small>
+                            </div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Specializing in Artificial Intelligence, Machine Learning, Data Science, Data Structures, and Software Engineering.
+                        </p>
+                        <div class="timeline-chips">
+                            <span>Artificial Intelligence</span>
+                            <span>Machine Learning</span>
+                            <span>Data Science</span>
+                            <span>Full-Stack Development</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HSC Card -->
+                <div class="timeline-card-wrapper" data-reveal="right">
+                    <div class="timeline-node-icon"><i class="fa-solid fa-school"></i></div>
+                    <div class="timeline-glass-card">
+                        <div class="card-timeline-header">
+                            <div>
+                                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2023</span>
+                                <h3 class="degree-name">Higher Secondary Certificate (HSC)</h3>
+                                <h4 class="college-name"><i class="fa-solid fa-school-flag"></i> KCM Matric Higher Secondary School, Nilakottai</h4>
+                            </div>
+                            <div class="score-pill">
+                                <span class="score-value">86.5%</span>
+                            </div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Completed Higher Secondary Education with a strong focus on Mathematics, Computer Science, and Physics.
+                        </p>
+                        <div class="timeline-chips">
+                            <span>Mathematics</span>
+                            <span>Computer Science</span>
+                            <span>Physics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SSLC Card -->
+                <div class="timeline-card-wrapper" data-reveal="left">
+                    <div class="timeline-node-icon"><i class="fa-solid fa-award"></i></div>
+                    <div class="timeline-glass-card">
+                        <div class="card-timeline-header">
+                            <div>
+                                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2021</span>
+                                <h3 class="degree-name">Secondary School Leaving Certificate (SSLC)</h3>
+                                <h4 class="college-name"><i class="fa-solid fa-school-flag"></i> KCM Matric Higher Secondary School, Nilakottai</h4>
+                            </div>
+                            <div class="status-badge-outline">
+                                <span>Completed</span>
+                            </div>
+                        </div>
+                        <p class="timeline-body-text">
+                            Successfully completed secondary schooling with distinction in general sciences and mathematics foundations.
+                        </p>
+                        <div class="timeline-chips">
+                            <span>General Science</span>
+                            <span>Mathematics</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-gears"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- SKILLS SECTION (Icons & Technology Cards Only - No Percentage Bars) -->
+    <section class="section-padding" id="skills">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-gears"></i> Technical Stack & Competencies</span>
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <!-- Glassmorphism Skill Cards Grid -->
+            <div class="skills-tech-grid" data-reveal="up">
+                
+                <div class="tech-card">
+                    <div class="tc-icon py"><i class="fa-brands fa-python"></i></div>
+                    <h4>Python</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon java"><i class="fa-brands fa-java"></i></div>
+                    <h4>Java</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon js"><i class="fa-brands fa-js"></i></div>
+                    <h4>JavaScript</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon html"><i class="fa-brands fa-html5"></i></div>
+                    <h4>HTML5</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon css"><i class="fa-brands fa-css3-alt"></i></div>
+                    <h4>CSS3</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon mysql"><i class="fa-solid fa-server"></i></div>
+                    <h4>MySQL</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon mongo"><i class="fa-solid fa-leaf"></i></div>
+                    <h4>MongoDB</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon git"><i class="fa-brands fa-git-alt"></i></div>
+                    <h4>Git</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon github"><i class="fa-brands fa-github"></i></div>
+                    <h4>GitHub</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon pbi"><i class="fa-solid fa-chart-column"></i></div>
+                    <h4>Power BI</h4>
+                </div>
+
+                <div class="tech-card highlight-card">
+                    <div class="tc-icon ml"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4>Machine Learning</h4>
+                </div>
+
+                <div class="tech-card highlight-card">
+                    <div class="tc-icon ai"><i class="fa-solid fa-robot"></i></div>
+                    <h4>Artificial Intelligence</h4>
+                </div>
+
+                <div class="tech-card highlight-card">
+                    <div class="tc-icon ds"><i class="fa-solid fa-chart-pie"></i></div>
+                    <h4>Data Science</h4>
+                </div>
+
+                <div class="tech-card">
+                    <div class="tc-icon ps"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h4>Problem Solving</h4>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-folder-open"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- PROJECTS SECTION (5 Projects with AI SVG illustrations, Tech Badges, GitHub, View Details) -->
+    <section class="section-padding alt-section" id="projects">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-folder-open"></i> Portfolio Highlights</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="projects-grid-showcase">
+                
+                <!-- Project 1: Career Prediction System -->
+                <div class="project-glass-card" data-reveal="up">
+                    <div class="project-illustration-header header-ml">
+                        <div class="illustration-svg-box">
+                            <svg viewBox="0 0 400 200" class="project-svg">
+                                <circle cx="200" cy="100" r="60" fill="none" stroke="#2563EB" stroke-width="2" stroke-dasharray="4 4" class="rotating-svg-ring"/>
+                                <circle cx="200" cy="100" r="40" fill="#2563EB" opacity="0.12"/>
+                                <path d="M140 100 Q 200 40 260 100 T 320 100" fill="none" stroke="#06B6D4" stroke-width="3" class="wave-path"/>
+                                <g fill="#2563EB">
+                                    <circle cx="160" cy="75" r="6"/>
+                                    <circle cx="200" cy="100" r="8"/>
+                                    <circle cx="240" cy="125" r="6"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <span class="project-category-badge"><i class="fa-solid fa-brain"></i> Machine Learning</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">Career Prediction System</h3>
+                        <p class="project-description">
+                            Developed a machine learning model that predicts suitable career paths based on user interests and academic information using predictive analytics.
+                        </p>
+
+                        <div class="project-tech-badges">
+                            <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fa-solid fa-table"></i> Pandas</span>
+                            <span class="tech-badge"><i class="fa-solid fa-microchip"></i> Scikit-learn</span>
+                            <span class="tech-badge"><i class="fa-solid fa-robot"></i> Machine Learning</span>
+                        </div>
+
+                        <div class="project-action-buttons">
+                            <button class="btn btn-outline btn-sm project-btn" onclick="openProjectDetails('career')">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </button>
+                            <a href="https://github.com/K-Sreeja1103" target="_blank" class="btn btn-secondary btn-sm project-btn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Pet Care Management Web Application -->
+                <div class="project-glass-card" data-reveal="up" style="animation-delay: 0.1s;">
+                    <div class="project-illustration-header header-web">
+                        <div class="illustration-svg-box">
+                            <svg viewBox="0 0 400 200" class="project-svg">
+                                <rect x="100" y="40" width="200" height="120" rx="10" fill="none" stroke="#06B6D4" stroke-width="2"/>
+                                <line x1="100" y1="70" x2="300" y2="70" stroke="#06B6D4" stroke-width="1.5"/>
+                                <circle cx="120" cy="55" r="4" fill="#2563EB"/>
+                                <circle cx="132" cy="55" r="4" fill="#06B6D4"/>
+                                <path d="M140 110 L170 140 L260 90" fill="none" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <span class="project-category-badge badge-cyan"><i class="fa-solid fa-paw"></i> Web Application</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">Pet Care Management Web Application</h3>
+                        <p class="project-description">
+                            Responsive website for managing pet health records, feeding schedules, vaccination reminders and veterinary appointments.
+                        </p>
+
+                        <div class="project-tech-badges">
+                            <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        </div>
+
+                        <div class="project-action-buttons">
+                            <button class="btn btn-outline btn-sm project-btn" onclick="openProjectDetails('pet')">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </button>
+                            <a href="https://github.com/K-Sreeja1103" target="_blank" class="btn btn-secondary btn-sm project-btn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Student Performance Prediction -->
+                <div class="project-glass-card" data-reveal="up" style="animation-delay: 0.2s;">
+                    <div class="project-illustration-header header-ml">
+                        <div class="illustration-svg-box">
+                            <svg viewBox="0 0 400 200" class="project-svg">
+                                <rect x="80" y="50" width="240" height="100" rx="8" fill="none" stroke="#4338CA" stroke-width="2"/>
+                                <path d="M100 130 L150 90 L200 110 L250 60 L300 80" fill="none" stroke="#2563EB" stroke-width="3"/>
+                                <circle cx="250" cy="60" r="5" fill="#06B6D4"/>
+                            </svg>
+                        </div>
+                        <span class="project-category-badge"><i class="fa-solid fa-chart-line"></i> Analytics</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">Student Performance Prediction</h3>
+                        <p class="project-description">
+                            Built a predictive analytics model to estimate student academic performance using educational datasets and visualization.
+                        </p>
+
+                        <div class="project-tech-badges">
+                            <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="tech-badge"><i class="fa-solid fa-table"></i> Pandas</span>
+                            <span class="tech-badge"><i class="fa-solid fa-microchip"></i> Scikit-learn</span>
+                            <span class="tech-badge"><i class="fa-solid fa-chart-bar"></i> Matplotlib</span>
+                        </div>
+
+                        <div class="project-action-buttons">
+                            <button class="btn btn-outline btn-sm project-btn" onclick="openProjectDetails('student')">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </button>
+                            <a href="https://github.com/K-Sreeja1103" target="_blank" class="btn btn-secondary btn-sm project-btn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Library Management System -->
+                <div class="project-glass-card" data-reveal="up">
+                    <div class="project-illustration-header header-web">
+                        <div class="illustration-svg-box">
+                            <svg viewBox="0 0 400 200" class="project-svg">
+                                <path d="M120 50 L180 50 L180 150 L120 150 Z" fill="none" stroke="#2563EB" stroke-width="2"/>
+                                <path d="M190 50 L250 50 L250 150 L190 150 Z" fill="none" stroke="#06B6D4" stroke-width="2"/>
+                                <path d="M260 50 L280 50 L280 150 L260 150 Z" fill="none" stroke="#4338CA" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="project-category-badge badge-cyan"><i class="fa-solid fa-book"></i> Java Desktop</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">Library Management System</h3>
+                        <p class="project-description">
+                            Developed a desktop-based library management application for managing books, student records and issue/return operations.
+                        </p>
+
+                        <div class="project-tech-badges">
+                            <span class="tech-badge"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                        </div>
+
+                        <div class="project-action-buttons">
+                            <button class="btn btn-outline btn-sm project-btn" onclick="openProjectDetails('library')">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </button>
+                            <a href="https://github.com/K-Sreeja1103" target="_blank" class="btn btn-secondary btn-sm project-btn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: Weather Forecast Dashboard -->
+                <div class="project-glass-card" data-reveal="up" style="animation-delay: 0.1s;">
+                    <div class="project-illustration-header header-futuristic">
+                        <div class="illustration-svg-box">
+                            <svg viewBox="0 0 400 200" class="project-svg">
+                                <circle cx="160" cy="90" r="30" fill="none" stroke="#06B6D4" stroke-width="2"/>
+                                <path d="M180 110 C 190 90, 230 90, 240 110 C 250 110, 260 130, 240 130 L 170 130 Z" fill="none" stroke="#2563EB" stroke-width="2"/>
+                            </svg>
+                        </div>
+                        <span class="project-category-badge badge-indigo"><i class="fa-solid fa-cloud-sun"></i> API Web</span>
+                    </div>
+
+                    <div class="project-card-content">
+                        <h3 class="project-title">Weather Forecast Dashboard</h3>
+                        <p class="project-description">
+                            Built a responsive weather application that provides live weather updates and forecasts using API integration.
+                        </p>
+
+                        <div class="project-tech-badges">
+                            <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                            <span class="tech-badge"><i class="fa-solid fa-cloud"></i> OpenWeather API</span>
+                        </div>
+
+                        <div class="project-action-buttons">
+                            <button class="btn btn-outline btn-sm project-btn" onclick="openProjectDetails('weather')">
+                                <i class="fa-solid fa-circle-info"></i> View Details
+                            </button>
+                            <a href="https://github.com/K-Sreeja1103" target="_blank" class="btn btn-secondary btn-sm project-btn">
+                                <i class="fa-brands fa-github"></i> GitHub Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-building-user"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- INTERNSHIP SECTION -->
+    <section class="section-padding" id="internship">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-building-user"></i> Professional Experience</span>
+                <h2 class="section-title">Internship</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="internship-showcase-wrapper" data-reveal="up">
+                <div class="internship-glass-card">
+                    
+                    <div class="internship-visual-header">
+                        <div class="building-svg-illustration">
+                            <svg viewBox="0 0 400 180" class="building-svg">
+                                <rect x="80" y="60" width="70" height="100" rx="4" fill="none" stroke="#2563EB" stroke-width="2"/>
+                                <rect x="160" y="30" width="100" height="130" rx="6" fill="none" stroke="#06B6D4" stroke-width="2"/>
+                                <rect x="270" y="80" width="60" height="80" rx="4" fill="none" stroke="#4338CA" stroke-width="2"/>
+                                <g fill="#2563EB" opacity="0.4">
+                                    <rect x="180" y="50" width="16" height="16" rx="2"/>
+                                    <rect x="210" y="50" width="16" height="16" rx="2"/>
+                                    <rect x="180" y="80" width="16" height="16" rx="2"/>
+                                </g>
+                                <line x1="40" y1="160" x2="360" y2="160" stroke="#CBD5E1" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="internship-content-body">
+                        <div class="company-badge-header">
+                            <div>
+                                <span class="intern-role-pill"><i class="fa-solid fa-laptop-code"></i> Web Developer Intern</span>
+                                <h3 class="company-name">CodeBind Technologies, Chennai</h3>
+                            </div>
+                            <div class="experience-type">
+                                <span><i class="fa-solid fa-clock-rotate-left"></i> June, 2025</span>
+                            </div>
+                        </div>
+
+                        <p class="internship-description-text">
+                            Gained hands-on experience in Database Integration, team collaboration, improving code efficiency, application performance, and responsive user interface development.
+                        </p>
+
+                        <div class="internship-highlights-list">
+                            <div class="intern-hl-item">
+                                <i class="fa-solid fa-database"></i>
+                                <span>Database Integration</span>
+                            </div>
+                            <div class="intern-hl-item">
+                                <i class="fa-solid fa-bolt"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                            <div class="intern-hl-item">
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                <span>Responsive UI Development</span>
+                            </div>
+                            <div class="intern-hl-item">
+                                <i class="fa-solid fa-plug"></i>
+                                <span>API Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-award"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- CERTIFICATES SECTION -->
+    <section class="section-padding alt-section" id="certifications">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-award"></i> Verified Qualifications</span>
+                <h2 class="section-title">Certifications</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="certifications-grid">
+                
+                <!-- NPTEL -->
+                <div class="cert-glass-card" data-reveal="left">
+                    <div class="cert-illustration">
+                        <svg viewBox="0 0 100 100" class="cert-svg">
+                            <circle cx="50" cy="45" r="30" fill="none" stroke="#2563EB" stroke-width="3"/>
+                            <path d="M40 45 L47 52 L62 35" fill="none" stroke="#06B6D4" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">NPTEL</span>
+                        <h3 class="cert-name">Certified in Public Speaking (60%)</h3>
+                        <p class="cert-desc">Official certification validating articulate presentation and professional communication skills.</p>
+                        <div class="cert-badge-tag"><i class="fa-solid fa-circle-check"></i> Certified</div>
+                    </div>
+                </div>
+
+                <!-- DevTown -->
+                <div class="cert-glass-card" data-reveal="right">
+                    <div class="cert-illustration">
+                        <svg viewBox="0 0 100 100" class="cert-svg">
+                            <rect x="25" y="20" width="50" height="60" rx="4" fill="none" stroke="#06B6D4" stroke-width="3"/>
+                            <line x1="35" y1="35" x2="65" y2="35" stroke="#2563EB" stroke-width="3"/>
+                            <circle cx="50" cy="65" r="6" fill="#2563EB"/>
+                        </svg>
+                    </div>
+                    <div class="cert-details">
+                        <span class="cert-issuer">DevTown</span>
+                        <h3 class="cert-name">Accredited in Python Bootcamp</h3>
+                        <p class="cert-desc">Comprehensive training in Python programming, data structures, and algorithmic development.</p>
+                        <div class="cert-badge-tag"><i class="fa-solid fa-circle-check"></i> Certified</div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-solid fa-trophy"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="section-padding" id="achievements">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-solid fa-star"></i> Recognition & Competitions</span>
+                <h2 class="section-title">Achievements</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="achievements-grid">
+                
+                <div class="achievement-card" data-reveal="up">
+                    <div class="achievement-icon icon-gold"><i class="fa-solid fa-trophy"></i></div>
+                    <div class="achievement-content">
+                        <span class="achieve-prize">Third Place</span>
+                        <h3>National Level Code-a-thon</h3>
+                        <p class="achieve-location"><i class="fa-solid fa-building-columns"></i> KG College</p>
+                        <p class="achieve-desc">Won third place in intense algorithmic coding and problem-solving competition.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card" data-reveal="up" style="animation-delay: 0.1s;">
+                    <div class="achievement-icon icon-cyan"><i class="fa-solid fa-laptop-code"></i></div>
+                    <div class="achievement-content">
+                        <span class="achieve-prize">Participant</span>
+                        <h3>TNWISE 2025 Hackathon</h3>
+                        <p class="achieve-location"><i class="fa-solid fa-flag"></i> KCT College</p>
+                        <p class="achieve-desc">Participated in TNWISE 2025 state-level technical hackathon.</p>
+                    </div>
+                </div>
+
+                <div class="achievement-card" data-reveal="up" style="animation-delay: 0.2s;">
+                    <div class="achievement-icon icon-indigo"><i class="fa-solid fa-file-powerpoint"></i></div>
+                    <div class="achievement-content">
+                        <span class="achieve-prize">Paper Presentation</span>
+                        <h3>Blue Brain Technology</h3>
+                        <p class="achieve-location"><i class="fa-solid fa-microchip"></i> Kongu College</p>
+                        <p class="achieve-desc">Contributed in research paper presentation on Blue Brain Technology.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- EXTRACURRICULAR BOX -->
+            <div class="extracurricular-box" data-reveal="up">
+                <div class="extra-header">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>Extracurricular Leadership</h3>
+                </div>
+                <div class="extra-content">
+                    <div class="extra-role-badge">Treasurer</div>
+                    <h4>Citizen Consumer Club</h4>
+                    <p>Managed financial planning, budgeting, and event coordination for consumer awareness initiatives.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div class="ai-divider">
+        <div class="divider-line"></div>
+        <div class="divider-node"><i class="fa-regular fa-paper-plane"></i></div>
+        <div class="divider-line"></div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <section class="section-padding alt-section" id="contact">
+        <div class="container">
+            
+            <div class="section-header text-center" data-reveal="top">
+                <span class="section-subtitle"><i class="fa-regular fa-paper-plane"></i> Let's Connect</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-split-grid">
+                
+                <!-- Contact Cards -->
+                <div class="contact-info-card" data-reveal="left">
+                    <h3>Let's Build Impactful AI Solutions Together</h3>
+                    <p class="contact-lead-text">
+                        I am actively seeking internship and full-time AI Engineer and Data Science opportunities. Feel free to connect!
+                    </p>
+
+                    <div class="contact-channels-list">
+                        
+                        <!-- Email -->
+                        <div class="channel-item">
+                            <div class="channel-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <div class="channel-details">
+                                <small>Email Address</small>
+                                <a href="mailto:sreejakaruppanan06@gmail.com" class="channel-link">sreejakaruppanan06@gmail.com</a>
+                            </div>
+                            <button class="copy-btn" onclick="copyEmail('sreejakaruppanan06@gmail.com')" title="Copy Email">
+                                <i class="fa-regular fa-copy"></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="channel-item">
+                            <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="channel-details">
+                                <small>Phone Contact</small>
+                                <a href="tel:+919342879101" class="channel-link">+91 93428 79101</a>
+                            </div>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="channel-item">
+                            <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="channel-details">
+                                <small>Location</small>
+                                <span class="channel-link">Pollachi / Tamil Nadu, India</span>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <div class="channel-item">
+                            <div class="channel-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="channel-details">
+                                <small>LinkedIn Profile</small>
+                                <a href="https://www.linkedin.com/in/sreeja-k-b41161296" target="_blank" class="channel-link">linkedin.com/in/sreeja-k-b41161296</a>
+                            </div>
+                            <a href="https://www.linkedin.com/in/sreeja-k-b41161296" target="_blank" class="link-arrow-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+
+                        <!-- GitHub -->
+                        <div class="channel-item">
+                            <div class="channel-icon"><i class="fa-brands fa-github"></i></div>
+                            <div class="channel-details">
+                                <small>GitHub Profile</small>
+                                <a href="https://github.com/K-Sreeja1103" target="_blank" class="channel-link">github.com/K-Sreeja1103</a>
+                            </div>
+                            <a href="https://github.com/K-Sreeja1103" target="_blank" class="link-arrow-btn">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-card" data-reveal="right">
+                    <form id="portfolioContactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="inputName">Your Name</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-user"></i>
+                                <input type="text" id="inputName" placeholder="e.g. Recruiter / Hiring Manager" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputEmail">Your Email</label>
+                            <div class="input-wrapper">
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" id="inputEmail" placeholder="e.g. hiring@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="inputMessage">Message</label>
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fa-regular fa-comment-dots"></i>
+                                <textarea id="inputMessage" rows="4" placeholder="Hello Sreeja, we reviewed your portfolio and would like to discuss an opportunity..." required></textarea>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-lg">
+                            <span>Send Message</span>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER WITH DARK BLUE GRADIENT -->
+    <footer class="footer-dark">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <i class="fa-solid fa-brain"></i>
+                    <span>Sreeja K</span>
+                </div>
+                <p class="footer-tagline">Artificial Intelligence & Data Science</p>
+                <p class="footer-motto">Building Intelligent Solutions through AI</p>
+            </div>
+
+            <div class="footer-middle">
+                <p class="footer-dev-text">Designed & Developed by <strong>Sreeja K</strong></p>
+                <p class="footer-copyright">© 2026 Sreeja K. All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-right">
+                <div class="footer-social-icons">
+                    <a href="https://github.com/K-Sreeja1103" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sreeja-k-b41161296" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:sreejakaruppanan06@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <a href="#hero" class="back-to-top-btn" title="Back to Top">
+                    <i class="fa-solid fa-arrow-up"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE MODALS -->
+
+    <!-- Project Details Modal -->
+    <div class="modal-overlay" id="modalProjectDetails">
+        <div class="modal-content modal-md">
+            <div class="modal-header">
+                <div class="modal-title-group">
+                    <span class="modal-subtitle"><i class="fa-solid fa-circle-info"></i> Project Details</span>
+                    <h2 id="projectModalTitle">Project Details</h2>
+                </div>
+                <button class="modal-close" id="closeProjectModal">&times;</button>
+            </div>
+            <div class="modal-body" id="projectModalBody">
+                <!-- Injected dynamically via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check toast-icon"></i>
+        <span id="toastText">Action completed successfully!</span>
+    </div>
+
+    <!-- Custom Script -->
+    <script src="script.js"></script>
+</body>
+</html>
